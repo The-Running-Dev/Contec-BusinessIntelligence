@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+      <id>bi.gocontec.com</id>
+      <version>2017.06.05</version>
+      <authors>Contect LLC</authors>
+      <owners>Contec LLC</owners>
+      <projectUrl>http://bi.gocontec.com</projectUrl>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>Business Intelligence Application</description>
+      <releaseNotes>
+      </releaseNotes>
+      <dependencies>
+        <dependency id="Chocolatey-Package.extension" version="1.0.28" />
+        <dependency id="Chocolatey-IIS.extension" version="1.0.4" />
+      </dependencies>
+  </metadata>
+</package>

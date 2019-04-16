@@ -1,0 +1,20 @@
+{
+    "AppPool": "bi.gocontec.com",
+    "AppPoolIdentity": "NetworkService",
+    "Branch": "",
+    "Bindings": "http/*:80:bi.gocontec.com",
+    "BusinessIntelligenceConnection": "Server=localhost;Database=BusinessIntelligence;UserID=root;Password=;Allow User Variables=True;",
+    "CTGConnection": "Server=ctg.rds.gocontec.com;Database=CTG_Dev;UserID=CTGUser;Password=CTG123;Allow User Variables=True;",
+    "DatabaseName": "BusinessIntelligence",
+    "DatabaseScriptsPath": "Database",
+    "DatabaseServer": "localhost",
+    "DatabaseUser": "root",
+    "DatabaseUserPassword": "",
+    "Name": "bi.gocontec.com",
+    "PhysicalPath": "C:\\WebSites\\bi.gocontec.com",
+    "ReleaseNotesPath": "ReleaseNotes.md",
+    "Version": "",
+    "Url": "http://bi.gocontec.local",
+    "WebAppPath": "Web",
+    "WebAuthConnection": "Server=localhost;Database=WebAuth;UserID=root;Password=;Allow User Variables=True;"
+}

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Contec Business Intelligence</title>
+	<title>@ViewBag.Title</title>
+
+	<link rel="icon" type="image/x-icon" href="~/Content/favicon.ico" />
+	@*<script src="~/Scripts/pace.js"></script>*@
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,400|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+	@Html.Partial("Header", ViewData["Header"])
+
+	@RenderBody()
+
+	@Html.Partial("Footer")
+
+	<script type="text/javascript">
+	@RenderSection("scripts", false)
+	</script>
+</body>
+</html>

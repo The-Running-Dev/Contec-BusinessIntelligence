@@ -1,0 +1,19 @@
+{
+    "ArtifactsPath": "Artifacts",
+    "DatabaseScriptsPath": "Database",
+    "ContecFeedAPIKey": "38686C6E-3D89-496E-AD88-3C1B6FDC9CD5",
+    "ContecFeedUrl": "http://nuget.gocontec.com/nuget/Contec",
+    "OctopusDeployAPIKey": "API-TQVV7BVWF01AARDSXYHL925OADG",
+    "OctopusDeployProject": "Business Intelligence",
+    "OctopusDeployServerUrl": "http://deploy.gocontec.com",
+    "PackageId": "bi.gocontec.com",
+    "PackagePath": "Package",
+    "ReleaseNotesPath": "Artifacts\\ReleaseNotes.md",
+    "SolutionPath": "BI.sln",
+    "SpecPath": "Package\\bi.gocontec.com.nuspec",
+    "TeamCityUrl": "http://ci.gocontec.com:8080",
+    "TeamCityUser": "gitHubUser",
+    "TeamCityPassword": "!Ry7Tg9XdDvzwg@X@xc6",
+    "WebArtifactsPath": "Artifacts\\_PublishedWebsites\\Web",
+    "WebConfigPath": "Artifacts\\_PublishedWebsites\\Web\\Web.config"
+}

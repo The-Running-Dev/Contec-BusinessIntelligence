@@ -1,0 +1,58 @@
+﻿@model BI.Web.Models.Login
+@{
+	ViewBag.Title = "Please Login";
+}
+
+@if (!Request.IsAuthenticated)
+{
+	<section id="form" class="animated fadeInDown">
+		<div class="container">
+			<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+				<div class="panel white-alpha-90">
+					<div class="panel-heading">
+						<div class="panel-title text-center"><h2>Sign In to <span class="text-primary">Business Intelligence</span></h2></div>
+					</div>
+					<div class="panel-body">
+						<div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+						@using (Html.BeginForm("Login", "Account", new { ViewBag.ReturnUrl }, FormMethod.Post, new { id = "loginform", @class = "form-horizontal", role = "form" }))
+						{
+							@Html.AntiForgeryToken()
+							@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user"></i></span>
+								@Html.TextBoxFor(m => Model.Username, new { id = "login-username", Name = "username", @class = "form-control", placeholder = "Username" })
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								@Html.PasswordFor(m => Model.Password, new { id = "login-password", Name = "password", @class = "form-control", placeholder = "Password" })
+							</div>
+							<div class="input-group col-xs-12 text-center login-action">
+								<span id="btn-login"><button type="submit" class="btn btn-success">Login </button></span>
+								@*<div class="checkbox">
+									<label>
+										<input id="login-remember" type="checkbox" name="remember" value="1" style="margin-top: 10px;"> Remember Me &nbsp;
+									</label>
+								</div>*@
+							</div>
+							<div style="margin-top: 10px" class="form-group">
+								<div class="col-sm-12 controls">
+								</div>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@*<script type="text/javascript">
+		Pace.on('hide', function () {
+			$("#container").fadeIn('1000');
+			$.backstretch([
+				"/Content/images/taxi-1.jpg",
+				"/Content/images/taxi-2.jpg"
+			], { duration: 5000, fade: 1000 });
+		});
+	</script>*@
+}
+}

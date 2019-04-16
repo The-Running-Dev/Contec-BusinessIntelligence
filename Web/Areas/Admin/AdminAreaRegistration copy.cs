@@ -1,0 +1,20 @@
+﻿using System.Web.Mvc;
+
+namespace BI.Web.Areas.Admin
+{
+    public class AdminAreaRegistration : AreaRegistration 
+    {
+        public override string AreaName => "admin";
+
+        public override void RegisterArea(AreaRegistrationContext context) 
+        {
+            context.Routes.MapMvcAttributeRoutes();
+
+            context.MapRoute(
+                "adminDefault",
+                "admin/{controller}/{action}/{id}",
+                new { action = "Index", id = UrlParameter.Optional }
+            );
+        }
+    }
+}

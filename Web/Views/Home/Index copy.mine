@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<app-analytics>
+    <i class="center-fix main-spinner fa fa-spin fa-spinner"></i>
+</app-analytics>

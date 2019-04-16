@@ -1,0 +1,7 @@
+{
+    "Bindings": "http/*:80:dev-bi.gocontec.com",
+    "BusinessIntelligenceConnection": "Server=crs-dev.cnvayknczt9m.us-east-1.rds.amazonaws.com;Database=BusinessIntelligence;UserID=biUser;Password=91dMp6Mm@Jpd32h#vc$N;Allow User Variables=True;",
+    "Name": "dev-bi.gocontec.com",
+    "Url": "http://dev-bi.gocontec.com",
+    "WebAuthConnection": "Server=contecrds.gocontec.com;Database=WebAuth;UserID=WebAuthUser;Password=WebAuth123;Allow User Variables=True;"
+}
